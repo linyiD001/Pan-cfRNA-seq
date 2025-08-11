@@ -1,3 +1,5 @@
+###after preprocessing
+
 name=……
 read1=/dssg/home/acct-dahan/share/cfRNA/unmapped/$name/rRNA_1.fastq.gz
 read2=/dssg/home/acct-dahan/share/cfRNA/unmapped/$name/rRNA_2.fastq.gz
