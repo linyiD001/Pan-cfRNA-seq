@@ -17,7 +17,6 @@ coldata$type[idx_H]<-'1'
 idx_C<-grep('C',colnames(count_analysis))
 coldata$type[idx_C]<-'3'
 
-
 ###cfRNA_filter
 NCH_DEG<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/ANALYSIS/DEG_salmonstandard/N_type_C_vs_H_result.csv",header=T,row.names = 1)
 gene_list_DEG<-subset(NCH_DEG,baseMean>10)
@@ -42,7 +41,6 @@ rm(list=ls())
 
 ####separate dataset
 
-
 count_N<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/ANALYSIS/DEG_salmonstandard/nor_count_N.csv",row.names = 1)
 #count_N<-count_N[,-1]
 count_X<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/ANALYSIS/DEG_salmonstandard/nor_count_X.csv",row.names = 1)
@@ -57,7 +55,6 @@ idx_H<-grep('H',colnames(count_analysis))
 coldata$type[idx_H]<-'1'
 idx_C<-grep('C',colnames(count_analysis))
 coldata$type[idx_C]<-'3'
-
 
 ###cfRNA_filter
 NCH_DEG<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/ANALYSIS/DEG_salmonstandard/salmon_repeataware_stranded_allgenome/X_type_C_vs_H_result.csv",header=T,row.names = 1)
