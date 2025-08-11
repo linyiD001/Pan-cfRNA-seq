@@ -1,4 +1,11 @@
 ####correlation between TEcount & repeataware
+library(dplyr) 
+library(tidyr)
+library(stats)
+library(ggplot2)
+library(ggpubr)
+library(scales)
+library(readr)
 
 TEcount_data<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/MAPPING/TEcount/cf_Transcript_genename.csv",header=T,row.names = 1)
 TEcount_data<-aggregate(TEcount_data[,2:277],by=list(TEcount_data$name), FUN=sum)

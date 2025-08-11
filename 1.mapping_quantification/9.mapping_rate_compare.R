@@ -1,3 +1,7 @@
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
 ###OUR DATA
 repeataware_mapping_rate<-read.table("/dssg/home/acct-dahan/share/cfRNA/RESULT/MAPPING/salmon.repeataware/salmon.repeataware_stranded_allgenome/multiqc_data/multiqc_salmon.txt",sep='\t',header=T)
 standard_mapping_rate<-read.table("/dssg/home/acct-dahan/share/cfRNA/RESULT/MAPPING/salmon.standard/multiqc_data/multiqc_salmon.txt",sep='\t',header=T)

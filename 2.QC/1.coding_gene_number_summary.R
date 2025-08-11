@@ -5,8 +5,8 @@ library(ggplot2)
 library(biomaRt)
 library(ggrepel)
 library(clusterProfiler)
-setwd("/dssg/home/acct-dahan/share/cfRNA/RESULT/ANALYSIS/QC")
 
+setwd("/dssg/home/acct-dahan/share/cfRNA/RESULT/ANALYSIS/QC")
 
 count<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/MAPPING/salmon.repeataware/salmon.repeataware_stranded_allgenome/salmon.repeataware_simple_genename.csv",header = T,row.names=1)
 genelist<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/MAPPING/salmon.repeataware/salmon.repeataware_stranded_allgenome/all_genelist_annotation.csv",header = T,row.names=1)
@@ -14,7 +14,6 @@ genelist<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/MAPPING/salmon.repe
 protein_coding<-genelist[which(genelist$genetype=="protein_coding"),4]
 
 CEG<-count[which(count$Group.1 %in% protein_coding),]
-
 
 filtered_namelist<-read.csv("/dssg/home/acct-dahan/share/cfRNA/RESULT/ANALYSIS/QC/QC_repeataware_list.csv",header=T,row.names = 1)
 
