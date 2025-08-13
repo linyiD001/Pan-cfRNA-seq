@@ -1,0 +1,11 @@
+{
+	"__default__" :
+	{
+		"jobname": "{rule}-{wildcards.sample_id}",
+		"partition": "debug64c512g",
+		"nodes": 1,
+		"ntasks": 8,
+		"output": "/dssg/home/acct-dahan/dahan-user3/cfRNA/code/0_pre/cluster_log/{rule}_{wildcards.sample_id}.out",
+		"error": "/dssg/home/acct-dahan/dahan-user3/cfRNA/code/0_pre/cluster_log/{rule}_{wildcards.sample_id}.err"
+	}
+}
